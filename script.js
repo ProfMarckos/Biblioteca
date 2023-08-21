@@ -34,7 +34,9 @@ let livros=document.getElementById('livros');
 
 showButton.addEventListener("click", () => {
     for(let item of ESTANTE){
-        livros.textContent=`${item.tituloLivro}, ${item.autorLivro}, ${item.anoPub}`
+        let novo = document.createElement('h2');
+        novo.innerHTML=`Livro: ${item.tituloLivro}, Autor(a): ${item.autorLivro}, Ano: ${item.anoPub}`;
+        livros.appendChild(novo);
     }
 })
 
