@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de livros</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/09eafa1c19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <section class="container">
+        <div>
+            <label>Título do livro</label>
+            <input type="text" name="" id="nome">
+        </div>
+        <div>
+            <label>Autor(a) do livro</label>
+            <input type="text" name="" id="autor">
+        </div>
+        <div>
+            <label>Ano de publicação</label>
+            <input type="number" name="" id="ano">
+        </div>
+        <button id="add">
+            <i class="fa-solid fa-book"></i>
+            Adicionar
+        </button>
+        <button id="show">
+            <i class="fa-solid fa-eye"></i>
+            Visuzalizar
+        </button>
+    </section>
+    <section class="container">
+        <h2 id="information">
+            Nenhum livro cadastrado.
+        </h2>
+        <img src="" id="img" alt="">
+        <button id="ante">
+            <i class="fa-solid fa-left-long"></i>
+            Anterior
+        </button>
+        <button id="prox">
+            <i class="fa-solid fa-right-long"></i>            
+            Proximo
+        </button>        
+    </section>
+    <section class="container">
+        <h2 id="livros">
+            Nenhum livro cadastrado.
+        </h2>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

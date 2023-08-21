@@ -1,0 +1,162 @@
+/* Use um modelo de dimensionamento de caixa mais intuitivo. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remover margem padrão */
+* {
+    margin: 0;
+}
+
+/* Ajustes tipográficos!
+Adicionar altura de linha acessível
+Melhore a renderização do texto */
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Melhore os padrões de mídia */
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Remover estilos de tipografia de formulário integrados */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Evite estouros de texto */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* Criar um contexto de empilhamento raiz */
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* Reset acima */
+
+@font-face {
+    font-family:'Gentium';
+    src: url(Fonts/GentiumBookPlus-BoldItalic.ttf);
+}
+
+body{
+    background-image: url(img/library.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+.container {
+    display: flex;
+    margin: 200px auto;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: wrap;
+    width: 100%;
+    background-color: #000000e1;
+    box-shadow: 5px 5px 25px black;
+    
+}
+
+div {
+    margin: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: space-between
+}
+
+label {
+    font-family: 'Gentium', serif;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1.5rem;
+    margin: 0 20px
+}
+input{
+    height: 4rem;
+    font-family: 'Gentium', serif;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 0 20px;
+    width: 300px;
+    border-color: #ffffff;
+    background: linear-gradient(90deg, #242424 50%, #000000 100%);
+    color:#fff;
+    transition: 500ms;
+}
+ input:focus{
+    background: linear-gradient(90deg, #792929 50%, #000000 100%);
+    scale: 1.1;
+    transition: 500ms;
+}
+i{
+    padding: 10%;
+    color: #792929;
+}
+button{
+    font-family: 'Gentium', serif;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 50px;
+    text-align:left;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    border-radius: 5px;
+    border-color: #ffffff;
+    background-color: #bdbdbd;
+    margin: 10px;
+    cursor: pointer;
+    transition: 300ms;
+}
+button:hover{
+    background-color: #ffffff;
+    transition: 300ms;
+    scale: 1.1;
+}
+#information, #livros{
+    font-family: 'Gentium', serif;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1.5rem;
+    margin: 0 20px
+}
+img{
+    height: 200px;
+}
+
+
+@media screen and (max-width: 1350px) {
+    .container{
+        flex-flow: column;
+        align-items: center;
+    }
+  }
